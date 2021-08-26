@@ -9,12 +9,30 @@ First, there is need to import numpy and pandas, and then import the dataset for
         import numpy as np
         import pandas as pd
 
-          TitanicData = pd.read_csv('D:/github/Python/train.csv')      # In this section, one replaces their specific path to read the data
-          TitanicData.head()                                          # To visualize the data, the .head() is used to view the first five elements
+          TitanicData = pd.read_csv('D:/github/Python/train.csv')  # In this section, one replaces their specific path to read the data
+          TitanicData.head()                              # To visualize the data, the .head() is used to view the first five elements
 </pre>
 </code>
 The image below shows the dataset's outlook
 <img src="https://github.com/danny-votez/Illustration-of-Data-Processing-and-Preparation-with-Python-Libraries/blob/main/datasetview.jpg">
+
+As seen from above, the head() keyword gives the first 5 elements. However, if you want to get a specific number of items, you can adjust by adding "n="number of rows you need"". 
+This is illustrated below, where, to show 10 items, inside the head() function, n=10 is added, to specify the desired rows of data to show;
+
+<pre>
+          import numpy as np
+          import pandas as pd
+          
+          TitanicData = pd.read_csv('D:/github/Python/train.csv')
+          
+          # To get varied display rows, specify the value using the n item, e.g., n=8, or n=10, or n=30
+          
+          TitanicData.head(n=10)                        # Gives 10 rows of dataset
+</pre>
+The below image shows the visualization with 10 rows;
+
+![image](https://user-images.githubusercontent.com/77758884/130964763-26eef94b-93e8-4ceb-923a-981f7e590484.png)
+
 
 Next, we can get more information about the Titanic data, using the info() tool, which will be coded as;
 <code>
@@ -51,6 +69,14 @@ For example, from the data, the mean values are evident. In the sample, we can s
         - Parch (0.381594) and,
         - Fare (32.204208).
 </pre>
+NOTE: The above describe() function only gives columns that have continuous data elements, while there is excluding caterorical data.
+However, if you need to include everything, you can add the "(include='all')" after writing the describe() function.
+This is as illustrated below;
+<pre>
+            TitanicData.describe(include='all')        # Gives descriptive statistics for all columns
+</pre>
+Below is now the outlook for all columns in the dataset;
+![image](https://user-images.githubusercontent.com/77758884/130963069-7c442688-764b-4ee1-aa00-778bc5f6ff75.png)
 
 
 
