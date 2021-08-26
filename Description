@@ -1,0 +1,2 @@
+First, to complete the data preparation, one needs to access their data, and in this case, we need to rely on some python libraries
+This are numpy and pandas, with pandas being essential in allowing the reading of the Comma Separated Value (CSV) file
