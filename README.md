@@ -1,8 +1,8 @@
-# Illustration-of-Data-Processing-and-Preparation-with-Python-Libraries
-In this tutorial, we use the Titanic Data (obtained from Kaggle) to illustrate key aspects of Data Processing and Preparation
-To complete this exercise, there is relying on useful Python Libraries
+### Illustrating Data Processing and Preparation with Python Libraries
+- In this tutorial, we use the Titanic Data (obtained from Kaggle) to illustrate key aspects of Data Processing and Preparation
+- To complete this exercise, there is relying on useful Python Libraries
 
-First, there is need to import numpy and pandas, and then import the dataset for using
+- First, there is need to import numpy and pandas, and then import the dataset for using
 
 <code>
 <pre>
